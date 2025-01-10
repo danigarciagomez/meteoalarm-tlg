@@ -8,9 +8,9 @@ using System.Windows;
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
 [assembly: AssemblyTitle("meteoalarm-tlg")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Avisos por Telegram de las alertas de MeteoAlarm")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("DGG Lab")]
 [assembly: AssemblyProduct("meteoalarm-tlg")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]

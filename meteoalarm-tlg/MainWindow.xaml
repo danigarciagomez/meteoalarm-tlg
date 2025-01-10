@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:meteoalarm_tlg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Avisos Telegram - MeteoAlarm" Height="170" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BtnConfig" Content="Configuración" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Click="BtnConfig_Click" Grid.Row="0"  Grid.Column="1" />
+        <Button x:Name="BtnEjecManual" Content="EjecutaManual" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top" Click="BtnEjecManual_Click" Grid.Row="0"  Grid.Column="1" />
         
+        <Button x:Name="BtnProceso"  HorizontalAlignment="Left" Margin="15,6,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Click="BtnProceso_Click">
+            <Image Source="images/play_32x32.png" Height="32" Width="32"/>
+        </Button>
+        <Image x:Name="StatusImage" Source="images/rojo_32x32.png" Height="32" Width="32" HorizontalAlignment="Left" Margin="60,7,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0"/>
+
+        <Label Name="lblZonasAct" Content="Zonas: " HorizontalAlignment="Left" Margin="5,1,0,0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top"/>
+        <Label Name="lblNumEjec" Content="Nº Ejecuciones: " HorizontalAlignment="Left" Margin="5,1,0,0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top"/>
+        
+        <Label Name="lblFecPrimeraEjec" Content="Primera ejecución: " HorizontalAlignment="Left" Margin="5,1,0,0" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top"/>
+        <Label Name="lblNumAvisosAct" Content="Nº Avisos en XML (ult.ejec): " HorizontalAlignment="Left" Margin="5,1,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"/>
+        
+        <Label Name="lblFecUltEjec" Content="Última ejecución: " HorizontalAlignment="Left" Margin="5,1,0,0" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top"/>
+        <Label Name="lblNumAvisosSent" Content="Nº Avisos enviados (ult.ejec): " HorizontalAlignment="Left" Margin="5,1,0,0" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
